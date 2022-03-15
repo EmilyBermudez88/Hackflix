@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//in order to use routing logic, you need to import the web app router into the project
+import { BrowserRouter } from 'react-router-dom';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* in order to enable React Router to control and manage all the URLs inside the single-page application, we need to wrap <Router> around the application */}
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
