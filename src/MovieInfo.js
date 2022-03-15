@@ -26,7 +26,7 @@ function MovieInfo(){
                }
           }).then((movieResponse)=> {
                setDetails(movieResponse.data);
-               console.log(details);
+               // console.log(details);
           })
      }, [movie_id]);
 
