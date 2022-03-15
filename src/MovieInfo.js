@@ -28,7 +28,7 @@ function MovieInfo(){
                setDetails(movieResponse.data);
                console.log(details);
           })
-     }, []);
+     }, [movie_id]);
 
      return(
           <section className="poster">
